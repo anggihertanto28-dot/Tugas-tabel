@@ -1,0 +1,76 @@
+/* Pengaturan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Kotak utama */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Judul kolom dan isi tabel */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header tabel */
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Warna baris selang-seling */
+tbody tr:nth-child(even) {
+    background-color: #eaf2ff;
+}
+
+/* Efek saat kursor diarahkan ke baris */
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
